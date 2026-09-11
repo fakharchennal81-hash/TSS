@@ -81,54 +81,6 @@ export const sportsTeams = [
   { name: 'Scopian Thunder', description: 'The volleyball team that strikes like lightning, thundering through every tournament.' },
 ];
 
-export const galleryImages = [
-  {
-    url: 'https://images.pexels.com/photos/11204756/pexels-photo-11204756.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Cricket player in uniform celebrating a game-winning shot',
-    title: 'Cricket Victory Celebration',
-  },
-  {
-    url: 'https://images.pexels.com/photos/11204757/pexels-photo-11204757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Cricket player raising bat in triumph',
-    title: 'Match Winning Innings',
-  },
-  {
-    url: 'https://images.pexels.com/photos/7680896/pexels-photo-7680896.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Cricketer in yellow uniform celebrating with bat raised',
-    title: 'Tournament Champions',
-  },
-  {
-    url: 'https://images.pexels.com/photos/34412340/pexels-photo-34412340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Polished trophy with medals at sports award ceremony',
-    title: 'Trophy & Medal Ceremony',
-  },
-  {
-    url: 'https://images.pexels.com/photos/10435675/pexels-photo-10435675.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Golden trophy with ribbons and medals symbolizing victory',
-    title: 'Awards & Recognition',
-  },
-  {
-    url: 'https://images.pexels.com/photos/6345332/pexels-photo-6345332.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Collection of trophies and medals displayed on desk',
-    title: 'Champions Showcase',
-  },
-  {
-    url: 'https://images.pexels.com/photos/13812360/pexels-photo-13812360.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Schoolchildren enjoying outdoor games at school event',
-    title: 'Sports Day — Active Participation',
-  },
-  {
-    url: 'https://images.pexels.com/photos/10643696/pexels-photo-10643696.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Children playing basketball outdoors in school uniforms',
-    title: 'Sports Day — Team Spirit',
-  },
-  {
-    url: 'https://images.pexels.com/photos/5909583/pexels-photo-5909583.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Children in school uniforms playing cricket on sports ground',
-    title: 'Sports Day — On the Ground',
-  },
-];
-
 export const heroImage = 'https://images.pexels.com/photos/5147366/pexels-photo-5147366.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
 
 export const aboutImages = {
