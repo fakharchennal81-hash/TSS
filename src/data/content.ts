@@ -81,7 +81,7 @@ export const sportsTeams = [
   { name: 'Scopian Thunder', description: 'The volleyball team that strikes like lightning, thundering through every tournament.' },
 ];
 
-export const heroImage = 'https://i.ibb.co/1fghLm0F/Chat-GPT-Image-Sep-11-2026-03-01-06-PM.png';
+export const heroImage = 'https://images.pexels.com/photos/5147366/pexels-photo-5147366.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
 
 export const aboutImages = {
   building: 'https://images.pexels.com/photos/14446732/pexels-photo-14446732.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',

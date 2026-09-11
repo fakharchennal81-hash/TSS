@@ -8,66 +8,58 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative bg-navy-950 overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-navy-800/40 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl" />
+    <section id="home" className="relative min-h-[88vh] flex items-center overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroImage}
+          alt="Modern school building with lush green front lawns"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 hero-gradient" />
+      </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:py-20">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
-          {/* Text content */}
-          <div className="order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-gold-400/20 backdrop-blur border border-gold-400/40 rounded-full mb-6 animate-fade-in">
-              <Sparkles className="w-4 h-4 text-gold-400" />
-              <span className="text-gold-300 text-sm font-medium">Admissions Open for 2026</span>
-            </div>
-
-            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-white leading-tight mb-4 animate-fade-in-up">
-              Welcome to The Science Scope
-              <span className="block text-gold-400 mt-1">Higher Secondary School & College</span>
-            </h2>
-
-            <p className="text-lg sm:text-xl text-gray-200 mb-2 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              Your journey toward a bright future starts here!
-            </p>
-            <p className="text-base text-gold-300 font-medium mb-8 animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
-              "A Great Way of Education"
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <button
-                onClick={() => scrollTo('#admissions')}
-                className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-red-600 text-white font-semibold rounded-xl shadow-xl hover:bg-red-700 transition-all hover:scale-105 hover:shadow-2xl"
-              >
-                Admissions Open 2026 — Apply Now
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button
-                onClick={() => scrollTo('#achievements')}
-                className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/10 backdrop-blur border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all hover:scale-105"
-              >
-                <Trophy className="w-5 h-5 text-gold-400" />
-                Explore Achievements
-              </button>
-            </div>
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 w-full">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-gold-400/20 backdrop-blur border border-gold-400/40 rounded-full mb-6 animate-fade-in">
+            <Sparkles className="w-4 h-4 text-gold-400" />
+            <span className="text-gold-300 text-sm font-medium">Admissions Open for 2026</span>
           </div>
 
-          {/* Hero image */}
-          <div className="order-1 lg:order-2 animate-scale-in">
-            <div className="relative overflow-hidden rounded-lg shadow-2xl ring-1 ring-gold-400/20">
-              <img
-                src={heroImage}
-                alt="The Science Scope Higher Secondary School & College, Multan"
-                className="w-full h-64 sm:h-80 lg:h-[28rem] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 via-transparent to-transparent" />
-            </div>
+          <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 text-shadow-lg animate-fade-in-up">
+            Welcome to The Science Scope
+            <span className="block text-gold-400 mt-1">Higher Secondary School & College</span>
+          </h2>
+
+          <p className="text-lg sm:text-xl text-gray-200 mb-2 text-shadow animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            Your journey toward a bright future starts here!
+          </p>
+          <p className="text-base text-gold-300 font-medium mb-8 text-shadow animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
+            "A Great Way of Education"
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <button
+              onClick={() => scrollTo('#admissions')}
+              className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-red-600 text-white font-semibold rounded-xl shadow-xl hover:bg-red-700 transition-all hover:scale-105 hover:shadow-2xl"
+            >
+              Admissions Open 2026 — Apply Now
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+            <button
+              onClick={() => scrollTo('#achievements')}
+              className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/10 backdrop-blur border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all hover:scale-105"
+            >
+              <Trophy className="w-5 h-5 text-gold-400" />
+              Explore Achievements
+            </button>
           </div>
         </div>
       </div>
 
       {/* Wave divider */}
-      <div className="relative z-10">
+      <div className="absolute bottom-0 left-0 right-0 z-10">
         <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
           <path d="M0 100V40L60 35L120 45L180 30L240 40L300 25L360 35L420 20L480 30L540 15L600 25L660 10L720 20L780 5L840 15L900 0L960 10L1020 25L1080 15L1140 30L1200 20L1260 35L1320 25L1380 40L1440 30V100H0Z" fill="white"/>
         </svg>
