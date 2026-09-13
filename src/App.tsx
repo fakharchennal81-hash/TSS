@@ -4,6 +4,7 @@ import About from '@/components/About';
 import Admissions from '@/components/Admissions';
 import Achievements from '@/components/Achievements';
 import Sports from '@/components/Sports';
+import Director from '@/components/Director';
 import Footer from '@/components/Footer';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Admissions />
         <Achievements />
         <Sports />
+        <Director />
       </main>
       <Footer />
     </div>

@@ -102,5 +102,6 @@ export const navLinks = [
   { label: 'Admissions', href: '#admissions' },
   { label: 'Academic Achievements', href: '#achievements' },
   { label: 'Sports & Campus Life', href: '#sports' },
+  { label: 'Director', href: '#director' },
   { label: 'Contact Us', href: '#contact' },
 ];
