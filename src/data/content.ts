@@ -21,7 +21,7 @@ export const rollOfHonor = [
   { rollNo: 'TS-007', name: 'Eilaf', grade: '1st Year', marks: '1129/1200', position: '7th' },
   { rollNo: 'TS-008', name: 'Safoora Afzal', grade: '1st Year', marks: '1128/1200', position: '8th' },
   { rollNo: 'TS-009', name: 'Maheen Faiz', grade: '1st Year', marks: '1126/1200', position: '9th' },
-  { rollNo: 'TS-010', name: 'Eishaa Ramadan', grade: '9th Class', marks: '543', position: 'Top — Class 9th' },
+  { rollNo: 'TS-010', name: 'Farasat Ali', grade: '1st Year', marks: '1116/ 1200', position: 'Top — Class 9th' },
 ];
 
 export const achieverGalleryImages = [
