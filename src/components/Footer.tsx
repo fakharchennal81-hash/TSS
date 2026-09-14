@@ -1,5 +1,4 @@
-import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, ArrowRight, Clock } from 'lucide-react';
-import SchoolLogo from '@/components/SchoolLogo';
+import { MapPin, Phone, Mail, GraduationCap, Facebook, Instagram, Youtube, ArrowRight, Clock } from 'lucide-react';
 
 const quickLinks = [
   { label: 'Online Admission Form', href: '#admissions' },
@@ -22,7 +21,9 @@ export default function Footer() {
           {/* School info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <SchoolLogo className="w-11 h-11 drop-shadow-md" />
+              <div className="w-11 h-11 rounded-full bg-gradient-to-br from-navy-700 to-navy-900 flex items-center justify-center ring-2 ring-gold-400">
+                <GraduationCap className="w-6 h-6 text-gold-400" />
+              </div>
               <div>
                 <h3 className="font-serif font-bold text-base">The Science Scope</h3>
                 <p className="text-xs text-gray-400">HSS & College, Multan</p>
@@ -96,7 +97,9 @@ export default function Footer() {
           <div>
             <h4 className="font-serif font-bold text-lg mb-4 text-gold-400">Director</h4>
             <div className="p-5 bg-navy-900 rounded-2xl border border-navy-800">
-              <SchoolLogo className="w-14 h-14 mb-3 drop-shadow-lg" />
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-3 shadow-lg">
+                <GraduationCap className="w-8 h-8 text-white" />
+              </div>
               <h5 className="font-serif font-bold text-white">Mudassir Raza Khan</h5>
               <p className="text-xs text-gray-400 mb-2">Director, The Science Scope</p>
               <a

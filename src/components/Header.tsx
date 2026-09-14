@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
-import SchoolLogo from '@/components/SchoolLogo';
+import { Menu, X, Phone, GraduationCap } from 'lucide-react';
 import { navLinks } from '@/data/content';
 
 export default function Header() {
@@ -46,7 +45,9 @@ export default function Header() {
           <div className="flex items-center justify-between">
             {/* Logo + School name */}
             <div className="flex items-center gap-3">
-              <SchoolLogo className="w-12 h-12 flex-shrink-0 drop-shadow-md" />
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-navy-800 to-navy-950 flex items-center justify-center ring-2 ring-gold-400 shadow-md flex-shrink-0">
+                <GraduationCap className="w-7 h-7 text-gold-400" />
+              </div>
               <div className="leading-tight">
                 <h1 className="font-serif text-base sm:text-lg font-bold text-navy-900">
                   The Science Scope
