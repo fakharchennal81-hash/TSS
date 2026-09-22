@@ -1,5 +1,4 @@
 import { ArrowRight, Trophy, Sparkles } from 'lucide-react';
-import { heroImage } from '@/data/content';
 
 export default function Hero() {
   const scrollTo = (href: string) => {
@@ -9,14 +8,23 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-[88vh] flex items-center overflow-hidden">
-      {/* Background image */}
+      {/* Background Video (Cloudinary Link Connected) */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Modern school building with lush green front lawns"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 hero-gradient" />
+        >
+          <source 
+            src="https://res.cloudinary.com/h32sev5y/video/upload/v1790072034/the_school.mp4" 
+            type="video/mp4" 
+          />
+          Your browser does not support the video tag.
+        </video>
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 hero-gradient bg-black/40" />
       </div>
 
       {/* Content */}
